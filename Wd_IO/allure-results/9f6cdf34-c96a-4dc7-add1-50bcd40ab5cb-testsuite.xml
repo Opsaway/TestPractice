@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570675015570' stop='1570675023155'>
+    <name>Validating add vehicles functionality  </name>
+    <title>Validating add vehicles functionality  </title>
+    <test-cases>
+        <test-case start='1570675015571' status='failed' stop='1570675023154'>
+            <name>Naviagte to Vehicles page</name>
+            <title>Naviagte to Vehicles page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1570675015577' status='passed' stop='1570675022817'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4f5854ff-1f75-420d-b230-c8aa0b114e37-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1570675022821' status='passed' stop='1570675023150'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='d6a7d5d3-21f2-4984-beb6-065ed7839b7c-attachment.png' type='image/png' size='74639'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expected true to be false, 'add vehicle functionality falied due to invalid vin'.</message>
+                <stack-trace>Error: Expected true to be false, 'add vehicle functionality falied due to invalid vin'.
+                    at &lt;Jasmine>
+                    at &lt;Jasmine>
+                    at UserContext.it (/Users/opsaway/Desktop/WDIO/rac-qa-web/Wd_IO/spec/login.spec.js:12:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

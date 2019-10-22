@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//label[text()='First Rentable Date']/parent::div//input"
+}

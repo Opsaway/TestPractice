@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571163606784' stop='1571163606875'>
+    <name>Validating add vehicles functionality  </name>
+    <title>Validating add vehicles functionality  </title>
+    <test-cases>
+        <test-case start='1571163606786' status='failed' stop='1571163606870'>
+            <name>Naviagte to Vehicles page</name>
+            <title>Naviagte to Vehicles page</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1571163606800' status='failed' stop='1571163606870'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='993a53c6-ae5b-4109-811d-2ea0b8888928-attachment.json' type='application/json' size='51'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: no such window: window was already closed
+                  (Session info: chrome=77.0.3865.90)
+                  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.3 x86_64)</message>
+                <stack-trace>Error: no such window: window was already closed
+                  (Session info: chrome=77.0.3865.90)
+                  (Driver info: chromedriver=2.43.600229 (3fae4d0cda5334b4f533bede5a4787f7b832d052),platform=Mac OS X 10.14.3 x86_64)
+                    at UserContext.it (/Users/opsaway/Desktop/WDIO/rac-qa-web/Wd_IO/spec/login.spec.js:13:13)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571421820784' stop='1571421821811'>
+    <name>Validating login functionality </name>
+    <title>Validating login functionality </title>
+    <test-cases>
+        <test-case start='1571421820786' status='failed' stop='1571421821807'>
+            <name>test_login With valid details</name>
+            <title>test_login With valid details</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1571421820918' status='failed' stop='1571421821807'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='18d57f3e-ca59-43f0-b32b-99322fc0d889-attachment.json' type='application/json' size='52'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Uncaught exception: Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'mysqlroot'@'10.2.5.17' (using password: YES)</message>
+                <stack-trace>error properties: Object({ code: 'ER_ACCESS_DENIED_ERROR', errno: 1045, sqlMessage: 'Access denied for user 'mysqlroot'@'10.2.5.17' (using password: YES)', sqlState: '28000', fatal: true })
+                Error: ER_ACCESS_DENIED_ERROR: Access denied for user 'mysqlroot'@'10.2.5.17' (using password: YES)
+                    at emitOne (events.js:116:13)
+                    at Socket.emit (events.js:211:7)
+                    at &lt;Jasmine>
+                    at DataBaseUtil.connectToDB (/Users/opsaway/Desktop/Silverware_new/rac-qa-silverware/Wd_IO/page/DataBaseUtil.js:15:13)
+                    at UserContext.it (/Users/opsaway/Desktop/Silverware_new/rac-qa-silverware/Wd_IO/spec/login.spec.js:21:18)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

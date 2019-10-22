@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//div[contains(text(),'Austin')]/parent::md-option[contains(@ng-repeat,'active: true')]"
+}
