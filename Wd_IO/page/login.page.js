@@ -1,31 +1,18 @@
 class Login{
 
     get inputUserEmail(){
-        return  $("[name='email']");
+        return  $("//input[@type='email']");
     }
 
     get inputPassword(){
-        return  $("[name='password']");
+        return  $("//input[@type='password']");
     }
 
-    get linkForgotPwd(){
-        return $('//a[text()="Forgot Password"]');
-    }
 
     get buttonLogin(){
-        return $("//span[text()='Log In']/ancestor::button");
+        return $("//input[@value='Log In']");
     }
-    get pageHeader() {
-        return $("//span[contains(@class,'title-text')]");
-    }
-
-    get pageTitle(){
-        return $("//main[@class='dashboard-container']");
-    }
-
-    get input(){
-        return $("//label[text()='First Rentable Date']/parent::div//input");
-    }
+    
     
     login(userName,password,flag){
 
